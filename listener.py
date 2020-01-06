@@ -51,7 +51,7 @@ def check_gv_env_is_down(env):
 def get_status_text(envs):
     result_text = """"""
     for key in envs.keys():
-        result_text += "GV {} - *{}* \n".format(key, 'DOWN' if IS_DOWN_ENVS[key] else 'UP')
+        result_text += "GV {} - **{}** \n".format(key, 'DOWN' if IS_DOWN_ENVS[key] else 'UP')
 
     return result_text
 
